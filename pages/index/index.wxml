@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="logo">
+    <image class="logo-pic" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="logo-welcome">欢迎使用</text>
+    <text class="logo-welcome">welcome to use</text>
+  </view>
+  <view class="usermotto">
+    <navigator url="/pages/chat/chat" >
+      <button class="btn">智能聊天</button>
+    </navigator>
+    <navigator url="/pages/pic/pic" >
+      <button class="btn">文字搜图</button>
+    </navigator>
+    
+  </view>
+</view>

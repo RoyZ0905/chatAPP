@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/pic/pic"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "智能聊天机器人Roy",
+    "navigationBarTextStyle":"black"
+  }
+}

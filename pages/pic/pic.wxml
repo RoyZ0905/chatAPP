@@ -1,0 +1,23 @@
+<scroll-view scroll-y="ture" style="height:530px;" scroll-top="{{scrollTop}}">
+  <block wx:for="{{msglist}}">
+    <view class="send" wx:if="{{item.type==0}}">
+      <text class="text">{{item.msg}}</text>
+      <image class="photo" src="/image/1.jpg"></image>
+    </view>
+
+    <view class="reply" wx:if="{{item.type==1}}">
+      <image class="photo" src="/image/1.jpg"></image>
+      <image mode="aspectFit" src="{{item.msg}}"></image>
+    </view>
+  </block>
+</scroll-view>
+
+
+
+
+<form bindsubmit="send">
+  <view class="sendMessage">
+    <textarea name="msg" class="inputMessage"/>
+    <button form-type="submit" class="sendBtn">发 送</button>
+  </view>
+</form>
